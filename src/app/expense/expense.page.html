@@ -1,0 +1,52 @@
+
+
+<ion-content [fullscreen]="true">
+  <ion-card>
+    <!-- <ion-item>
+      <ion-icon name="pin" slot="start"></ion-icon>
+      <ion-label>ion-item in a card, icon left, button right</ion-label>
+      <ion-button fill="outline" slot="end">View</ion-button>
+    </ion-item> -->
+
+    <ion-card-content>
+      <ion-item button="true" id="open-date-input">
+        <ion-label>Date</ion-label>
+        <ion-text slot="end">{{ dateValue }}</ion-text>
+        <ion-popover trigger="open-date-input" show-backdrop="false">
+          <ng-template>
+            <ion-datetime
+              #popoverDatetime
+              presentation="date"
+              (ionChange)="dateValue = formatDate(popoverDatetime.value)"
+            ></ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>
+<ion-item>
+  <ion-label position="floating">Payee</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+<ion-item>
+  <ion-label position="floating">Amount</ion-label>
+  <ion-input></ion-input>
+</ion-item>
+
+
+
+
+<ion-item>
+  <ion-label>Category</ion-label>
+  <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+    <ion-select-option value="brown">Brown</ion-select-option>
+    <ion-select-option value="blonde">Blonde</ion-select-option>
+    <ion-select-option value="black">Black</ion-select-option>
+    <ion-select-option value="red">Red</ion-select-option>
+  </ion-select>
+</ion-item>
+
+  <ion-button expand="block" shape="round">Add</ion-button>
+
+
+    </ion-card-content>
+  </ion-card>
+</ion-content>

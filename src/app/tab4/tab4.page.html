@@ -1,0 +1,42 @@
+
+<ion-content [fullscreen]="true">
+  <div class="card">
+<div class="card-image">
+  <img src="../../assets/pie-cart (1).png" />
+</div>
+    <div class="card-item">
+  <ion-item  routerLink="/profile">
+    <ion-thumbnail slot="start">
+      <img src="../../assets/user (2).png"class="image">
+    </ion-thumbnail>
+    <ion-label>
+      <h3 ion-text color="primary">Profile</h3>
+      <p></p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item  routerLink="/tabs/tab2">
+    <ion-thumbnail slot="start">
+      <img src="../../assets/statistics.png" class="image">
+    </ion-thumbnail>
+    <ion-label>
+      <h3 ion-text color="primary">Statistics</h3>
+      <p></p>
+    </ion-label>
+  </ion-item>
+
+  <ion-item routerLink="/tabs/tab3">
+    <ion-thumbnail slot="start">
+      <img src="../../assets/target.png" class="image">
+    </ion-thumbnail>
+    <ion-label>
+      <h3 ion-text color="primary">Target</h3>
+      <p></p>
+    </ion-label>
+  </ion-item>
+</div>
+  </div>
+
+
+  <app-explore-container name="Tab 4 page"></app-explore-container>
+</ion-content>

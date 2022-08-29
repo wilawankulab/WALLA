@@ -1,0 +1,16 @@
+ion-content{
+  --background: #3bd6c6;
+  position: relative;
+  .card-wallet{
+    position: absolute;
+    top: 6.5rem;
+    width: 90%;
+    height: 75%;
+    left: 50%;
+    transform: translateX(-50%);
+    background:#fff;
+    border-radius: 0.5rem 0.5rem 0.5rem ;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.10);
+
+  }
+}
