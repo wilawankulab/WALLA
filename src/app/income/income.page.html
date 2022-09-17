@@ -1,51 +1,67 @@
-
-
 <ion-content [fullscreen]="true">
   <ion-card>
-    <!-- <ion-item>
-      <ion-icon name="pin" slot="start"></ion-icon>
-      <ion-label>ion-item in a card, icon left, button right</ion-label>
-      <ion-button fill="outline" slot="end">View</ion-button>
-    </ion-item> -->
 
     <ion-card-content>
       <ion-item button="true" id="open-date-input-2">
+        <ion-thumbnail slot="start">
+          <img src="../../assets/image/schedule.png" class="image">
+        </ion-thumbnail>
         <ion-label>Date</ion-label>
         <ion-text slot="end">{{ dateValue2 }}</ion-text>
         <ion-popover trigger="open-date-input-2" show-backdrop="false">
           <ng-template>
-            <ion-datetime
-              #popoverDatetime
-              presentation="date"
-              (ionChange)="dateValue2 = formatDate(popoverDatetime2.value)"
-            ></ion-datetime>
+            <ion-datetime #popoverDatetime presentation="date"
+              (ionChange)="dateValue2 = formatDate(popoverDatetime2.value)"></ion-datetime>
           </ng-template>
         </ion-popover>
       </ion-item>
-<ion-item>
-  <ion-label position="floating">Payee</ion-label>
-  <ion-input></ion-input>
-</ion-item>
-<ion-item>
-  <ion-label position="floating">Amount</ion-label>
-  <ion-input></ion-input>
-</ion-item>
 
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/image/credit-card.png" class="image">
+        </ion-thumbnail>
+        <ion-label position="floating">Payee</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/image/coin.png" class="image">
+        </ion-thumbnail>
+        <ion-label position="floating">Amount</ion-label>
+        <ion-input></ion-input>
+      </ion-item>
 
+      <ion-item>
+        <ion-thumbnail slot="start">
+          <img src="../../assets/image/categories.png" class="image">
+        </ion-thumbnail>
+        <ion-label>Category</ion-label>
+        <ion-select value="brown" okText="Okay" cancelText="Dismiss">
+          <ion-select-option value="brown">Physical Activities</ion-select-option>
+          <ion-select-option value="Holidays & Travel">Holidays & Travel</ion-select-option>
+          <ion-select-option value="Transportation">Transportation</ion-select-option>
+          <ion-select-option value="Shopping/General">Shopping/General</ion-select-option>
+          <ion-select-option value="Clothes">Clothes</ion-select-option>
+          <ion-select-option value="Subscriptions & Recurring">Subscriptions & Recurring</ion-select-option>
+          <ion-select-option value="Gifts">Gifts</ion-select-option>
+          <ion-select-option value="Games & Apps">Games & Apps</ion-select-option>
+          <ion-select-option value="Electronics">Electronics</ion-select-option>
+          <ion-select-option value="Communications">Communications</ion-select-option>
+          <ion-select-option value="TV & Streaming">TV & Streaming</ion-select-option>
+          <ion-select-option value="Health & Beauty">Health & Beauty</ion-select-option>
+          <ion-select-option value="Banks & Fees">Banks & Fees</ion-select-option>
+          <ion-select-option value="Food & Restaurants">Food & Restaurants</ion-select-option>
+          <ion-select-option value="Cafe & Bars">Cafe & Bars</ion-select-option>
+          <ion-select-option value="Groceries">Groceries</ion-select-option>
+          <ion-select-option value="Hobbies ">Hobbies </ion-select-option>
+          <ion-select-option value="Entertainment">Entertainment</ion-select-option>
+        </ion-select>
+      </ion-item>
 
-<ion-item>
-  <ion-label>Category</ion-label>
-  <ion-select value="brown" okText="Okay" cancelText="Dismiss">
-    <ion-select-option value="brown">Brown</ion-select-option>
-    <ion-select-option value="blonde">Blonde</ion-select-option>
-    <ion-select-option value="black">Black</ion-select-option>
-    <ion-select-option value="red">Red</ion-select-option>
-  </ion-select>
-</ion-item>
-
-  <ion-button expand="block" shape="round"><p>Add</p></ion-button>
-
+      <ion-button expand="block" shape="round">
+        <p>Add</p>
+      </ion-button>
 
     </ion-card-content>
   </ion-card>

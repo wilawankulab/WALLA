@@ -1,22 +1,24 @@
 ion-content{
-  --background: #3bd6c6;
+  --background:	#0b44b8;
   position: relative;
 
   .card {
 
-    height : 80%;
+    height : 75%;
     width: 100%;
     background:#fff;
     position: absolute;
     bottom: 0;
-    border-radius: 1rem 1rem 0 ;
+    border-radius: 2rem 2rem 0  ;
 
     .card-image{
       position: absolute;
-      top: -7.1rem;
-      width: 50%;
+      top: -8.1rem;
+      width: 55%;
       left: 50%;
       transform: translateX(-50%);
+      // box-shadow: 1px  1px 15px 1px rgba(27, 31, 30, 0.1);
+      // border-radius:150px;
 
     }
 
@@ -25,8 +27,11 @@ ion-content{
       margin-top: 30%;
 
     .image{
-      width: 90%;
-      height: 90%;
+      width: 100%;
+      height: 100%;
+      box-shadow: 1px 13px 13px 0px rgba(34, 33, 33, 0.07);
+
+      border-radius:70px;
     }
 
     }
