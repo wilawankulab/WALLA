@@ -42,6 +42,14 @@ const routes: Routes = [
     path: 'profile',
     loadChildren: () => import('./profile/profile.module').then( m => m.ProfilePageModule)
   },
+  {
+    path: 'recordin',
+    loadChildren: () => import('./recordin/recordin.module').then( m => m.RecordinPageModule)
+  },
+  {
+    path: 'recordex',
+    loadChildren: () => import('./recordex/recordex.module').then( m => m.RecordexPageModule)
+  },
 ];
 @NgModule({
   imports: [
